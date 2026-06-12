@@ -33,7 +33,7 @@ Stress-tested using **Autocannon** to evaluate throughput under sudden burst tra
 
 **Prerequisites:** Docker, Docker Compose, Node.js (v18+)
 1. **Clone the repository:**
-   `git clone https://github.com/your-username/iot-data-pipeline.git`
+   `git clone https://github.com/drishtithakur-18/iot_emission_pipeline.git`
 2. **Install Dependencies:**
    `npm install`
 3. **Start the Infrastructure (Redis & MongoDB):**
