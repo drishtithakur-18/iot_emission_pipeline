@@ -1,0 +1,25 @@
+{
+  "name": "factory-telematics-pipeline",
+  "version": "1.0.0",
+  "description": "Industry 4.0 Factory Telematics Pipeline",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js",
+    "dev": "nodemon src/main.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "express": "^4.22.2",
+    "joi": "^17.13.3",
+    "mongodb": "^7.2.0",
+    "mongoose": "^8.24.0",
+    "redis": "^4.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
