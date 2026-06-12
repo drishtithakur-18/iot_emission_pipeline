@@ -6,7 +6,6 @@
 ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
-"Note: If you prefer running all infrastructure with one command you may use docker-compose up -d."
 
 An event-driven backend pipeline designed to process high-frequency telemetry data from IoT devices. Built to handle massive traffic spikes without dropping payloads or blocking the Node.js event loop.
 
@@ -29,6 +28,22 @@ Stress-tested using **Autocannon** to evaluate throughput under sudden burst tra
 
 ## Architecture Flow
 `IoT Devices` ➔ `Express API Gateway` ➔ `Redis Stream` ➔ `Worker Service` ➔ `MongoDB`
+
+## Local Setup & Installation
+
+**Prerequisites:** Docker, Docker Compose, Node.js (v18+)
+1. **Clone the repository:**
+   `git clone https://github.com/your-username/iot-data-pipeline.git`
+2. **Install Dependencies:**
+   `npm install`
+3. **Start the Infrastructure (Redis & MongoDB):**
+   `docker-compose up -d`
+4. **Run the Server:**
+   `npm start`
+
+## Running the Load Test
+To reproduce the 6,500+ req/sec benchmark locally, run the Autocannon script:
+`npm run test:load` (or your specific script command).
 
 ## 📂 Project Structure
 
