@@ -43,7 +43,7 @@ Stress-tested using **Autocannon** to evaluate throughput under sudden burst tra
 
 ## Running the Load Test
 To reproduce the 6,500+ req/sec benchmark locally, run the Autocannon script:
-`npm run test:load` (or your specific script command).
+`npm run test:load` 
 
 ## 📂 Project Structure
 
