@@ -38,8 +38,12 @@ Stress-tested using **Autocannon** to evaluate throughput under sudden burst tra
    `npm install`
 3. **Start the Infrastructure (Redis & MongoDB):**
    `docker-compose up -d`
-4. **Run the Server:**
-   `npm start`
+4. **Run the API Server & Worker:**
+   *(Open two separate terminals)*
+   # Terminal 1
+   npm run dev
+   # Terminal 2
+   node src/workers/worker.js
 
 ## Running the Load Test
 To reproduce the 6,500+ req/sec benchmark locally, run the Autocannon script:
