@@ -33,20 +33,26 @@ Stress-tested using **Autocannon** to evaluate throughput under sudden burst tra
 
 **Prerequisites:** Docker, Docker Compose, Node.js (v18+)
 1. **Clone the repository:**
+   ```bash
    `git clone https://github.com/drishtithakur-18/iot_emission_pipeline.git`
-2. **Install Dependencies:**
+3. **Install Dependencies:**
+   ```bash
    `npm install`
-3. **Start the Infrastructure (Redis & MongoDB):**
+5. **Start the Infrastructure (Redis & MongoDB):**
+   ```bash
    `docker-compose up -d`
-4. **Run the API Server & Worker:**
+7. **Run the API Server & Worker:**
    *(Open two separate terminals)*
    Terminal 1
+   ```bash
    npm run dev
    Terminal 2
+   ```bash
    node src/workers/worker.js
 
 ## Running the Load Test
 To reproduce the 6,500+ req/sec benchmark locally, run the Autocannon script:
+```bash
 `npm run test:load` 
 
 ## 📂 Project Structure
