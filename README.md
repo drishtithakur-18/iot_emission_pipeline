@@ -40,9 +40,9 @@ Stress-tested using **Autocannon** to evaluate throughput under sudden burst tra
    `docker-compose up -d`
 4. **Run the API Server & Worker:**
    *(Open two separate terminals)*
-   # Terminal 1
+   Terminal 1
    npm run dev
-   # Terminal 2
+   Terminal 2
    node src/workers/worker.js
 
 ## Running the Load Test
