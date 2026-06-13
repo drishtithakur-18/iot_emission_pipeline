@@ -10,7 +10,7 @@
 An event-driven backend pipeline designed to process high-frequency telemetry data from IoT devices. Built to handle massive traffic spikes without dropping payloads or blocking the Node.js event loop.
 
 ## Load Testing & Performance
-Stress-tested using **Autocannon** with the nitial burst throughput exceeding 66k requests/10s, while sustained throughput stabilized around 36k requests/10s.
+Stress-tested using **Autocannon** with the initial burst throughput exceeding 66k requests/10s, while sustained throughput stabilized around 36k requests/10s.
 * **Sustained Throughput:** ~3,600 Requests/Second
 * **Average Latency:** ~27.5ms
 * **Reliability:** Safely buffered 36,000+ concurrent requests during a 10-second burst window .
