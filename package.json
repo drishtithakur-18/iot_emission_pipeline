@@ -5,7 +5,8 @@
   "main": "src/main.js",
   "scripts": {
     "start": "node src/main.js",
-    "dev": "nodemon src/main.js"
+    "dev": "nodemon src/main.js",
+    "test:load": "npx autocannon -c 100 -d 10 -m POST -H \"Content-Type: application/json\" -b \"{\\\"hardwareId\\\": \\\"MACHINE-007\\\", \\\"metricType\\\": \\\"kwh_consumed\\\", \\\"value\\\": 45.2, \\\"timestamp\\\": \\\"2026-05-30T10:00:00Z\\\"}\" http://localhost:3000/factory-api/v1/submit-metrics"
   },
   "dependencies": {
     "dotenv": "^16.6.1",
@@ -16,6 +17,7 @@
     "redis": "^4.7.1"
   },
   "devDependencies": {
+    "autocannon": "^8.0.0",
     "nodemon": "^3.1.14"
   },
   "keywords": [],
