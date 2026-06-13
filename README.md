@@ -10,7 +10,7 @@
 An event-driven backend pipeline designed to process high-frequency telemetry data from IoT devices. Built to handle massive traffic spikes without dropping payloads or blocking the Node.js event loop.
 
 ## Load Testing & Performance (Testing Environment: WSL2 / 16GB RAM)
-Stress-tested using **Autocannon** with the initial burst throughput exceeding 64k requests/10s, while sustained throughput stabilized around 50k-64k requests/10s.
+Stress-tested using **Autocannon** with the initial burst throughput exceeding 64k requests/10s, the throughput varies between 40k-60k requests/10s depending on local resource availability (CPU/Disk I/O).
 * **Average Throughput:** ~6,400 Requests/Second
 * **Average Latency:** ~15.04ms
 * **Reliability:** Safely buffered and processed 64,000+ requests during a 10-second burst window using Redis Streams without blocking the Node.js event loop. 
