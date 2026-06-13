@@ -43,16 +43,14 @@ Stress-tested using **Autocannon** to evaluate throughput under sudden burst tra
    `docker-compose up -d`
 7. **Run the API Server & Worker:**
    *(Open two separate terminals)*
-   Terminal 1
    ```bash
+   Terminal 1
    npm run dev
    Terminal 2
-   ```bash
    node src/workers/worker.js
 
 ## Running the Load Test
 To reproduce the 6,500+ req/sec benchmark locally, run the Autocannon script:
-```bash
 `npm run test:load` 
 
 ## 📂 Project Structure
