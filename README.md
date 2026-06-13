@@ -50,7 +50,7 @@ Stress-tested using **Autocannon** with the initial burst throughput exceeding 6
    node src/workers/worker.js
 
 ## Running the Load Test
-To reproduce the 6,500+ req/sec benchmark locally, run the Autocannon script:
+To reproduce the 6,400+ req/sec benchmark locally, run the Autocannon script:
 `npm run test:load` 
 
 ## 📂 Project Structure
